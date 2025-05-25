@@ -85,7 +85,7 @@ void MergePartition(LIST &L, LIST &L1, LIST &L2)
 
 void Merge(LIST &L, LIST &L1, LIST &L2)
 {
-    NODE *temp = new NODE;
+    NODE *temp = new NODE; 
     while(L1.pHead != NULL || L2.pTail != NULL)
     {
         if(L2.pHead == NULL || (L1.pHead != NULL && (L1.pHead->info < L2.pHead->info)))
