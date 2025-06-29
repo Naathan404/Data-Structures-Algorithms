@@ -8,7 +8,7 @@ struct NODE {
     NODE *pNext;
 };
 // Khai báo kiểu con trỏ chỉ node
-typedef NODE *NODEPTR;
+typedef NODE* NODEPTR;
 typedef NODEPTR HASHTABLE[M];
 
 NODE* CreateNode(int x) {

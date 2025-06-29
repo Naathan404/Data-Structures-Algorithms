@@ -62,8 +62,7 @@ int GetTreeDepth(TREE T)
 bool IsPerfectBinaryTree(TREE T)
 {
     if(T == NULL) return true;
-    int d = GetTreeDepth(T);
-    queue<pair<TNODE*, int>> q;    
+    int d = GetTreeDepth(T);    queue<pair<TNODE*, int>> q;    
     q.push({T, 1});
     while(!q.empty())
     {

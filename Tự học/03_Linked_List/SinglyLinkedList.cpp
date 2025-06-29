@@ -120,9 +120,10 @@ void popBack(Node *&head)
 {
     if(head == NULL)
         return;
-    if(size(head) == 1)
+    if(head->next == NULL)
     {
-        popFront(head);
+        delete head;
+        head = NULL;
         return;
     }
     Node *tmp = head;
